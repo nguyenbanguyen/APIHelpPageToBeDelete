@@ -32,7 +32,11 @@ namespace APIHelpPageToBeDelete.Controllers
         public AccountController()
         {
         }
-
+        /// <summary>
+        /// khởi tạo token và Usermanage 
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="accessTokenFormat"></param>
         public AccountController(ApplicationUserManager userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
@@ -51,10 +55,16 @@ namespace APIHelpPageToBeDelete.Controllers
                 _userManager = value;
             }
         }
-
+        /// <summary>
+        /// Token để quản lý tài khoản
+        /// </summary>
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
         // GET api/Account/UserInfo
+        /// <summary>
+        /// External đăng nhập từ google/facebook/etc , cần code
+        /// </summary>
+        /// <returns></returns>
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
         [Route("UserInfo")]
         public UserInfoViewModel GetUserInfo()
@@ -68,7 +78,10 @@ namespace APIHelpPageToBeDelete.Controllers
                 LoginProvider = externalLogin != null ? externalLogin.LoginProvider : null
             };
         }
-
+        /// <summary>
+        /// Logout/ clear Cookie
+        /// </summary>
+        /// <returns></returns>
         // POST api/Account/Logout
         [Route("Logout")]
         public IHttpActionResult Logout()
@@ -116,7 +129,11 @@ namespace APIHelpPageToBeDelete.Controllers
                 ExternalLoginProviders = GetExternalLogins(returnUrl, generateState)
             };
         }
-
+        /// <summary>
+        /// Api Change Password
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         // POST api/Account/ChangePassword
         [Route("ChangePassword")]
         public async Task<IHttpActionResult> ChangePassword(ChangePasswordBindingModel model)
