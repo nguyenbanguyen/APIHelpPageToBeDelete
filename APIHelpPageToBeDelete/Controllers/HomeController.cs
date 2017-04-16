@@ -6,6 +6,9 @@ using System.Web.Mvc;
 
 namespace APIHelpPageToBeDelete.Controllers
 {
+    /// <summary>
+    /// Controller từ Template
+    /// </summary>
     public class HomeController : Controller
     {
         public ActionResult Index()

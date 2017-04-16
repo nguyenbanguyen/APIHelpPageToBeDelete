@@ -19,6 +19,9 @@ using APIHelpPageToBeDelete.Results;
 
 namespace APIHelpPageToBeDelete.Controllers
 {
+    /// <summary>
+    /// Controller từ template
+    /// </summary>
     [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController

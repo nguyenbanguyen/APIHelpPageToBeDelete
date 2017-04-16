@@ -7,6 +7,9 @@ using System.Web.Http;
 
 namespace APIHelpPageToBeDelete.Controllers
 {
+    /// <summary>
+    /// Controller từ Library Help Page giúp auto gen API Helper Page
+    /// </summary>
     [Authorize]
     public class ValuesController : ApiController
     {
