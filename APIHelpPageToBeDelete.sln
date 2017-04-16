@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIHelpPageToBeDelete", "APIHelpPageToBeDelete\APIHelpPageToBeDelete.csproj", "{1915B81B-89BC-49A8-86A4-3805E574781D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIHelpPageToBeDelete.Tests", "APIHelpPageToBeDelete.Tests\APIHelpPageToBeDelete.Tests.csproj", "{432267CB-A106-48E7-B3F2-717670C8C17B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1915B81B-89BC-49A8-86A4-3805E574781D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1915B81B-89BC-49A8-86A4-3805E574781D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1915B81B-89BC-49A8-86A4-3805E574781D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1915B81B-89BC-49A8-86A4-3805E574781D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{432267CB-A106-48E7-B3F2-717670C8C17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{432267CB-A106-48E7-B3F2-717670C8C17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{432267CB-A106-48E7-B3F2-717670C8C17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{432267CB-A106-48E7-B3F2-717670C8C17B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
