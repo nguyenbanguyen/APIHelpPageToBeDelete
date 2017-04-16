@@ -21,7 +21,7 @@ namespace DemoApi.Controllers
             new Products { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M },
         };
         /// <summary>
-        /// Lấy danh sách 100 product với id , tên chạy loop 1-100
+        /// Lấy array  100 product với id , tên chạy loop 1-100
         /// </summary>
         /// <returns></returns>
         [HttpGet]
@@ -34,7 +34,7 @@ namespace DemoApi.Controllers
             }
             return LongProduct;
         }/// <summary>
-         /// Trả về danh sách số lượng Product dựa vào parameter NumberOfProduct , Route theo api/{controller}/{Action}/{NumberOfProduct},giới hạn max 9999
+         /// Trả về array Product dựa vào parameter NumberOfProduct bằng Json ,giới hạn max 9999 để tránh sử dụng tài nguyên quá nhiều
          /// </summary>
          /// <param name="NumberOfProduct"> số lượng sản phẩm</param>
          /// <returns></returns>
@@ -47,7 +47,7 @@ namespace DemoApi.Controllers
                 Products[] LongProduct = new Models.Products[NumberOfProduct];
                 for (int i = 0; i < NumberOfProduct; i++)
                 {
-                    LongProduct[i] = new Products { Id = i, Name = "Táo loại " + i, Category = "táo", Price = 10000 };
+                    LongProduct[i] = new Products { Id = i, Name = "Cà loại " + i, Category = "Cà", Price = 10000 };
                 }
                 return LongProduct;
             }
